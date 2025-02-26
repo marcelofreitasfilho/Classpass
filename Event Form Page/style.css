@@ -289,6 +289,11 @@ h2 {
     margin-bottom: 24px;
     position: relative;
 }
+input[type="text"], input[type="email"], input[type="select"], input[type="tel"] {
+    color: black;
+}
+
+
 
 .input-row {
     display: flex;
@@ -325,7 +330,7 @@ input, select {
     border-radius: 6px;
     font-size: 16px;
     background-color: #FFFFFF;
-    color: #BDBDBD;
+    color: #000000;
     transition: all 0.2s ease;
 }
 
