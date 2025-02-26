@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'TT Norms';
+    src: url('/Fonts/TTNorms-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'TT Norms bold';
+    src: url('/Fonts/TTNorms-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Circuit';
+    src: url('/Fonts/Circuit.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #E6F3FF;
+    min-height: 100vh;
+    position: relative;
+}
+
+.top-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+h1{
+    font-family: 'Circuit';
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 56px;
+}
+
+p {
+    font-family: 'TT Norms';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 89%;
+        margin: 0px 30px 0 25px;
+    }
+}

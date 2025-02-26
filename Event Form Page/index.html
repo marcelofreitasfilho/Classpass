@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="top-tab">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../ClassPass Logo.webp" class="desktop-logo" alt="classpass logo">
+                <img src="../Exports/mobile-logo.png" class="mobile-logo" alt="classpass">
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="signup-btn">Sign up now</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="./index.html" class="signup-btn">Sign up now</a>
+            <button class="close-menu" id="closeMenu" aria-label="Close menu">
+                <span class="close-icon">✕</span>
+            </button>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="https://classpass.pt/search" class="menu-item">Find classes & appointments</a>
+            <a href="https://classpass.pt/plans" class="menu-item">Plans</a>
+            <a href="https://classpass.pt/features" class="menu-item">How credits work</a>
+            <a href="https://classpass.com/partners?utm_content=consumer_nav"  class="menu-item">List my business</a>
+            <a href="https://classpass.com/corporate-wellness?utm_content=consumer_nav" class="menu-item">Corporate wellness</a>
+            <a href="https://classpass.pt/login" class="menu-item">Log in</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Let's do this</h1>
+        <p class="subtitle">Thank you for your interest in the 2025 ClassPass Pickleball Classic. Submit your<br>details below to join the waitlist.</p>
+        
+        <div class="content-wrapper">
+            <div class="form-container">
+                <h2>Contact information</h2>
+                <p class="form-description">The information below will be used to contact you with event updates and to let you know your status on the waitlist.</p>
+                
+                <form id="waitlistForm">
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label for="firstName">First name*</label>
+                            <input type="text" id="firstName" required>
+                            <div class="error-message">This field is required</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last name*</label>
+                            <input type="text" id="lastName" required>
+                            <div class="error-message">This field is required</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone number*</label>
+                        <input type="tel" id="phone" required>
+                        <div class="error-message">This field is required</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address*</label>
+                        <input type="email" id="email" required>
+                        <div class="error-message">This field is required</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Pickleball experience level*</label>
+                        <select id="experience" required>
+                            <option value="" disabled selected>Please select</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="pro">Professional</option>
+                        </select>
+                        <div class="error-message">This field is required</div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="marketing" required>
+                        <label for="marketing">I agree to receive marketing and other communications from ClassPass and its group companies.*</label>
+                    </div>
+                    <p class="footer-text">
+                        You can unsubscribe from these communications at any time. For more information, please review our 
+                        <a href="https://classpass.com/terms/bra">Terms of Use</a> and <a href="https://classpass.com/privacy/bra">Privacy Policy</a>.
+                    </p>
+
+                    <button type="submit" id="submitButton">Join waitlist</button>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <img src="../Exports/Form Image.png" alt="Pickleball player">
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay" id="menuOverlay"></div>
+</body>
+</html>
