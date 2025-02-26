@@ -1,21 +1,21 @@
 /* Font Faces */
 @font-face {
   font-family: 'TT Norms';
-  src: url('./Fonts/TTNorms-Regular.woff') format('woff');
+  src: url('./Fonts/TTNorms-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Norms bold';
-  src: url('./Fonts/Fonts/TTNorms-Bold.woff') format('woff');
+  src: url('./Fonts/TTNorms-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circuit';
-  src: url('./Fonts/Fonts/Circuit.woff') format('woff');
+  src: url('./Fonts/Circuit.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
