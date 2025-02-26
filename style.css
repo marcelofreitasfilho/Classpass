@@ -1,7 +1,7 @@
 /* Font Faces */
 @font-face {
   font-family: 'TT Norms';
-  src: url('./Fonts/TTNorms-Bold.woff') format('woff');
+  src: url('./Fonts/TTNorms-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
