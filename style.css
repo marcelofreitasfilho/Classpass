@@ -131,6 +131,7 @@
 }
 
 .hero-container {
+  background-color: #EEF6FF;
   max-width: 1440px;
   max-height: fit-content;
   margin: 0 auto;
@@ -934,6 +935,10 @@ html, body {
   .hero-container {
     background-color: #E6F3FF;
     height: auto;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .hero-content {
@@ -943,6 +948,11 @@ html, body {
     flex-direction: column;
     order: 1;
     height: fit-content;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 
   .hero-content h1 {
@@ -951,8 +961,15 @@ html, body {
   }
 
   .cta-container {
-    width: 75%;
     background-color: #E6F3FF;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
   .hero-image {
@@ -1158,7 +1175,9 @@ html, body {
 
   .cta-primary, .cta-secondary {
     width: 100%;
+    max-width: 280px;
     text-align: center;
+    box-sizing: border-box;
   }
   
   .waitlist-title {
@@ -1199,5 +1218,28 @@ html, body {
   
   .schedule-item .time {
     min-width: auto;
+  }
+  .hero-container {
+    padding: 2rem 0.5rem;
+  }
+  
+  .cta-container {
+    padding: 0 5px;
+  }
+  
+  .cta-primary, .cta-secondary {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    max-width: 250px;
+  }
+  
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0 10px;
+  }
+  
+  .hero-content p {
+    padding: 0 10px;
   }
 }
